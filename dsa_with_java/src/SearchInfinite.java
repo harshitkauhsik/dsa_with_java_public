@@ -2,10 +2,10 @@ public class SearchInfinite {
     static int findElement(int[] val,int target)
     {
         int start=0;
-        int end=search(val,target);
+        int end=searchLimit(val,target);
         while(start<=end)
         {
-            int mid=start+(end+start)/2;
+            int mid=start+(end-start)/2;
             if (val[mid] == target) {
                 return mid;
             }
@@ -18,22 +18,21 @@ public class SearchInfinite {
         }
         return -1;
     }
-   static int search(int[] arr, int target)
+   static int searchLimit(int[] arr, int target)
     {
         int start=0;
         int end=1;
 
         if(target>arr[end])
         {
-            int index=(start+(end+1))*2;
-            end=index-1;
+           end=end+(end-start+1)*2;
         }
         return end;
     }
 
     public static void main(String[] args) {
         int[] arr={4,5,6,7,8,9,12};
-        System.out.println(SearchInfinite.findElement(arr,9));
+        System.out.println(SearchInfinite.findElement(arr,7));
     }
 
 }
