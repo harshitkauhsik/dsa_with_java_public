@@ -20,7 +20,7 @@ public class FindPeak {
   }
 
     public static void main(String[] args) {
-        int arr[]={25,11,9,8,7,6,5,4,3};
+        int arr[]={11,13,14,25,11,9,8,7,6,5,4,3};
         System.out.println(FindPeak.searchPeak(arr));
     }
 }
