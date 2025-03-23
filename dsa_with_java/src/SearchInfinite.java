@@ -1,4 +1,4 @@
-public class SearchInfinite {
+ class SearchInfinite {
     static int findElement(int[] val,int target)
     {
         int start=0;
