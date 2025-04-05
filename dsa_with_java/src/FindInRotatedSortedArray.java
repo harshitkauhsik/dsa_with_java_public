@@ -36,8 +36,8 @@ public class FindInRotatedSortedArray {
     }
 
     public static void main(String[] args) {
-        int[] arr = {4,5,6,7,9,11,0,1,2};
+        int[] arr = {4,5,6,6,7,7,9,11,0,1,2,6,7};
         System.out.println("Peak index: " + findPeak(arr, 0, arr.length - 1));  // Expected: 0
-        System.out.println("Target index: " + FindInRotatedSortedArray.result(arr, 0));  // Expected: 0
+        System.out.println("Target index: " + FindInRotatedSortedArray.result(arr, 7));  // Expected: 0
     }
 }
