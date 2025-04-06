@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class FindDuplicatesCS {
+public class FindAllDuplicatesCS {
     static void sort(int[] arr) {
         int i = 0;
         while (i < arr.length) {
